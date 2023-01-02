@@ -1,0 +1,21 @@
+{
+"name": "baseline_fullBatched_mixedPre",
+"epsilon": 1e-8,
+"small": false,
+"mixed_precision": true,
+"num_heads": 1,
+"position_and_content": false,
+"position_only": false,
+
+"train": {
+        "num_steps": [120000, 120000, 120000],
+        "lr": [0.00025, 0.000125, 0.000125],
+        "dataset": ["chairs", "things", "sintel"],
+        "batch_size": [8, 6, 6],
+        "image_size": [[368, 496], [400, 720], [368, 768]],
+        "wdecay": [0.0001, 0.0001, 0.00001],
+        "gamma": [0.8, 0.8, 0.85],
+        "validation": ["chairs", "sintel", "sintel"]
+         }
+
+}

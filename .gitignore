@@ -1,0 +1,14 @@
+checkpoints/*
+try/*
+alt_cuda_corr/*
+*.png
+*.csv
+*.pyc
+*.zip
+*.sh
+*.pth
+network.cpython*
+config_loader.cpython*
+core/__pycache__/*
+config/__pycache__/*
+*.cpython-39.pyc
